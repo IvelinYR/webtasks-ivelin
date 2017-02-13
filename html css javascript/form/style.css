@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+#content{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+h1 {
+    margin-left: 20px;
+}
+a{
+    margin-left: 10px;
+}
+input {
+    margin: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px ;
+}
+input:hover{
+    background-color:lavenderblush;
+}
+textarea{
+    border-radius: 5px;
+    margin: 14px;
+    box-shadow: 3px 3px 3px;
+
+}
+textarea:hover {
+    background-color:lavenderblush;
+
+}
+
+#btnSub {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 130px;
+    background-color: tan;
+}
+
+#btnSub:hover {
+    background-color: saddlebrown;
+}
+
