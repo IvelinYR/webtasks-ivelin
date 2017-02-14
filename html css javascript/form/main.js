@@ -31,15 +31,3 @@ function validate(name, regex, errorBox, errorMessage) {
         msgError.style.color = 'red'
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
