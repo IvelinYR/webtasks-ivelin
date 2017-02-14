@@ -10,10 +10,6 @@ function validateFraction() {
 }
 
 function isFractionValid(value) {
-    if(value < 0 ){
-        value
-    }
     const re = new RegExp(/^-?[0-9]{1,10}([,.][0-9]{1,5})?$/)
     return re.test(value);
 }
-
