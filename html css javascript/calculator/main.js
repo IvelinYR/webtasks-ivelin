@@ -1,21 +1,18 @@
-/**
- * Created by clouway on 09.02.17.
- */
-function validation(sing) {
-    let value = document.Calculator.display.value
-    let check = value.substr(value.length - 1)
-    if(value.length == 0){
+function validateSign(value) {
+    let input = document.Calculator.display.value
+    let check = input.substr(input.length - 1)
+    if(input.length == 0){
         return
     }
     else if (check == '+'|| (check == '-')|| (check == '*') || (check == '/') ||(check == '.')){
         return
     }else
         {
-            document.Calculator.display.value += sing
+            document.Calculator.display.value += value
     }
 }
 
-function point() {
+function onDotPressed() {
     let current = document.Calculator.display.value
     let separators = ['\\\+', '-', '\\*', '/']
     let tokens = current.split(new RegExp(separators.join('|'), 'g'))
@@ -28,23 +25,23 @@ function point() {
        return
     }
 
-    validation('.')
+    validateSign('.')
 }
 
 function btnPlus() {
-    validation('+')
+    validateSign('+')
 }
 
 function btnSub() {
-    validation('-')
+    validateSign('-')
 }
 
 function btnMult() {
-    validation('*')
+    validateSign('*')
 }
 
 function btnDiv () {
-    validation('/')
+    validateSign('/')
 }
 
 function clearAll() {
