@@ -70,6 +70,4 @@ function validateUserForm () {
     }else {
         correctLine.style.display = "none"
     }
-
-
 }
