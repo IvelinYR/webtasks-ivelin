@@ -1,7 +1,3 @@
-/**
- * Created by clouway on 10.02.17.
- */
-
 function validateFraction() {
     const number = document.getElementById('number').value
      if(isFractionValid(number)) {
@@ -14,7 +10,10 @@ function validateFraction() {
 }
 
 function isFractionValid(value) {
-    const re = new RegExp(/^[0-9]{1,10}([,.][0-9]{1,5})?$/)
+    if(value < 0 ){
+        value
+    }
+    const re = new RegExp(/^-?[0-9]{1,10}([,.][0-9]{1,5})?$/)
     return re.test(value);
 }
 

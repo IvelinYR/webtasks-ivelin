@@ -1,6 +1,3 @@
-/**
- * Created by clouway on 09.02.17.
- */
 function validateUserForm () {
     let fName = document.getElementById('fname').value.length
 

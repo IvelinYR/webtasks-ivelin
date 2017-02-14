@@ -1,4 +1,4 @@
-function ValidationField() {
+function validateForm() {
     let firstName = document.getElementById('fname').value
     validate(firstName,'^[a-zA-Z]{3,15}$', 'messageFName', 'First name must be between 3 and 10')
 
@@ -32,10 +32,6 @@ function validate(name, regex, errorBox, errorMessage) {
     }
 }
 
-//function TestField(name) {
-//   let value = document.getElementById(name).value;
-//   console.log(value);
-//}
 
 
 
