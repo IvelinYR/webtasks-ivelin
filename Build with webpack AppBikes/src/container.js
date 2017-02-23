@@ -8,9 +8,7 @@ import product1 from './images/img1.png'
 import product2 from './images/img2.png'
 import product3 from './images/img3.png'
 
-const Container = React.createClass({
-    render (){
-    return (
+const Container = () =>(
         <div className='container'>
           <Header />
           <div className="main u-clearfix">
@@ -33,8 +31,6 @@ const Container = React.createClass({
           </div>
           <Footer />
         </div>
-    );
-  }
-})
+    )
 
 export default Container

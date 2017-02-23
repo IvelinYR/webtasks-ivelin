@@ -10,6 +10,7 @@
 /bin
 
 # misc
+.idea
 .DS_Store
 .env
 npm-debug.log*

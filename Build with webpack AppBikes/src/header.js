@@ -3,9 +3,7 @@ import React from 'react'
 import './header.css'
 import './clearfix.css'
 
-const Header = React.createClass({
-    render () {
-        return (
+const Header = () =>(
             <div className='header u-clearfix'>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -15,7 +13,5 @@ const Header = React.createClass({
                 </ul>
             </div>
         )
-    }
-})
 
 export default Header

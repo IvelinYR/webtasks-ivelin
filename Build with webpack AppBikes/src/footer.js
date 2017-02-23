@@ -2,9 +2,7 @@ import React from 'react'
 
 import './footer.css'
 import './clearfix.css'
-const Footer = React.createClass({
-    render () {
-        return (
+const Footer = () =>(
             <div className='footer-box u-clearfix '>
                 <hr/>
                 <div className="footer-menu">
@@ -31,7 +29,5 @@ const Footer = React.createClass({
                 </div>
             </div>
         )
-    }
-})
 
 export default Footer
