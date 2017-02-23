@@ -1,0 +1,34 @@
+.container{
+  width: auto;
+  height: 750px;
+}
+#leftPosition{
+  text-align: center;
+  float: left;
+  margin: 5px;
+  width: 75%;
+  color: white;
+}
+.main a{
+  color: greenyellow;
+}
+.main img{
+  width: 30%;
+  float: left;
+  margin-left: 5px;
+  border: 1px solid greenyellow;
+}
+.main img:hover {
+  width: 32%;
+}
+#rightPosition{
+  text-align: center;
+  float: left;
+  margin: 5px;
+  width: 20%;
+  height: 350px;
+  color: white;
+}
+#rightPosition a:hover{
+  color: red;
+}
