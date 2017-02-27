@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="content">
+        <h1>Calculator</h1>
+        <form name="Calculator">
+            <input id="display" name="display" placeholder="0">
+            <br>
+
+            <input type="button" value="7" onclick="document.Calculator.display.value += '7'">
+            <input type="button" value="8" onclick="document.Calculator.display.value += '8'">
+            <input type="button" value="9" onclick="document.Calculator.display.value += '9'">
+            <input type="button" class="buttonUpRight"  value="<" onclick="deleteLastDigit()">
+            <input type="button" class="buttonUpRight"  value="CE" onclick="clearAll ()">
+            <br>
+
+            <input type="button" value="4" onclick="document.Calculator.display.value += '4'">
+            <input type="button" value="5" onclick="document.Calculator.display.value += '5'">
+            <input type="button" value="6" onclick="document.Calculator.display.value += '6'">
+            <input type="button" class="buttonUpRight"  value="-" onclick="btnSub ()">
+            <input type="button" class="buttonUpRight"  value="/" onclick="btnDiv ()">
+            <br>
+
+            <input type="button" value="1" onclick="document.Calculator.display.value += '1'">
+            <input type="button" value="2" onclick="document.Calculator.display.value += '2'">
+            <input type="button" value="3" onclick="document.Calculator.display.value += '3'">
+            <input type="button" class="buttonUpRight"  value="+" onclick="btnPlus ()">
+            <input type="button" class="buttonUpRight"  value="*" onclick="btnMult()">
+            <br>
+
+            <input type="button" class="buttonDownLeft"  value="0" onclick="document.Calculator.display.value += '0'">
+            <input type="button" class="buttonDownLeft"  value="." onclick="onDotPressed()">
+            <input type="button" class="buttonDownRight"  value="=" onclick="document.Calculator.display.value = eval(document.Calculator.display.value)">
+            <br>
+        </form>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
